@@ -1,0 +1,125 @@
+@import "../../_variables";
+
+  .sidemenu {
+    display: none;
+
+    &__search {
+      display: none;
+    }
+
+    &__separator {
+      display: none;
+    }
+
+    &__rights {
+      display: none;
+    }
+
+    &__paloalto {
+      display: none;
+    }
+  }
+
+  .sidemenu__item {
+    display: none;
+  }
+
+  .sidemenu__item__selected {
+    display: none;
+  }
+
+@media (max-width: 320px) {
+  .sidemenu {
+    width: 240px;
+    height: 100%;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.14);
+    background-color: #252b4d;
+    font-family: "Lato-Light", sans-serif;
+    padding-top: 27px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &__search {
+      font-size: 16px;
+      color: #676b83;
+      text-transform: uppercase;
+      margin: 0 0 0 42px;
+    }
+
+    &__separator {
+      width: 240px;
+      height: 2px;
+      margin: 27px 0 0 0;
+      background-color: #676b83;
+    }
+
+    &__rights {
+      font-size: 13px;
+      color: #676b83;
+      margin: 21px 0 0 38px;
+    }
+
+    &__paloalto {
+      font-size: 21px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      margin: 290px 0 0 38px;
+    }
+  }
+
+  .sidemenu__item {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 38px 0 0 38px;
+  }
+
+  .sidemenu__item__selected {
+    font-size: 14px;
+    color: rgb(169, 175, 219);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 38px 0 0 38px;
+  }
+
+
+  #menu.open {
+    transform: translateX(0);
+  }
+
+  #wrap.sidebarOpen {
+    transform: translateX(-50%);
+  }
+
+  .menuMoveLeft{
+    animation-name: menuMoveLeft;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+
+  .wrapMoveLeft{
+    animation-name: wrapMoveLeft;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes menuMoveLeft {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes wrapMoveLeft {
+    0%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-50%);
+    }
+  }
+}

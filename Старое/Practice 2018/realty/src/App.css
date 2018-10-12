@@ -1,0 +1,37 @@
+.App {
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.Ad__title{
+    float:left;
+    display: inline-block;
+    margin: 15px;
+    margin-top:20px;
+    position: relative;
+}
+
+.Ads {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.Button {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid #444444;
+    background-color: #eeeeee;
+}
+
+.Floor{
+    width: 30px;
+    margin: 20px;
+}
+

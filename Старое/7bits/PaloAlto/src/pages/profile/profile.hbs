@@ -1,0 +1,43 @@
+{{#> layout/base }}
+
+    {{#*inline "main-block"}}
+<main class="white-sheet">
+    <div class="header">Profile</div>
+    <div class="inf">
+        <form action="submit">
+            <div class="inf-item">
+                <label class="inf-item__label" for="FirstName">First Name</label>
+                <input class="inf-item__input" id="FirstName" name="FirstName" value="John">
+            </div>
+
+            <div class="inf-item">
+                <label class="inf-item__label" for="LastName">Last Name</label>
+                <input class="inf-item__input" id="LastName" name="LastName" value="Doe">
+            </div>
+
+            <div class="inf-item">
+                <label class="inf-item__label" for="E-mail">E-mail</label>
+                <input class="inf-item__input" id="E-mail" name="E-mail" value="johnd" type="email">
+            </div>
+
+            <div class="inf-item">
+                <label class="inf-item__label" for="Phone">Phone</label>
+                <input class="inf-item__input__phone" id="Phone" name="Phone" value="+_ (___) ___-__-__" type="tel">
+            </div>
+
+            <div class="inf-item">
+                <label class="inf-item__label__date" for="date">Date of Birth</label>
+                <input class="inf-item__input__date" id="date" name="date" value="DD/MM/YYYY" type="text">
+            </div>
+
+            <div class="inf-item">
+                <label class="inf-item__label">Sex</label>
+                <div><input class="inf-item__input__radio" name="Sex" value="Male" type="radio" checked>Male</div>
+                <div><input class="inf-item__input__radio" name="Sex" value="Female" type="radio">Female</div>
+            </div>
+            <input class="inf__submit" type="submit">
+        </form>
+    </div><!--inf-->
+</main>
+    {{/inline}}
+{{/layout/base }}

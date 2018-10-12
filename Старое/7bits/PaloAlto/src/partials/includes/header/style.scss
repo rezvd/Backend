@@ -1,0 +1,81 @@
+@import '../../../variables';
+
+.header {
+  font-family: $font_lato;
+  padding: 80px 225px 0 0;
+
+  &__text {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #333333;
+    margin-left: 220px;
+  }
+}
+
+.menu {
+  float: right;
+
+  &__item {
+    margin-left: $menu-indent;
+    font-size: 16px;
+    color: rgb(189, 189, 189);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+
+    &__picked {
+      color: rgb(51, 51, 51);
+      margin-left: $menu-indent;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    &__search {
+      background: url(../images/search.png) center center no-repeat;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-left: 19px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    font-family: $font_lato;
+    padding: 64px 0 64px 18px;
+
+    &__text {
+      font-size: 30px;
+      font-weight: bold;
+      font-style: italic;
+      display: inline-block;
+      color: #333333;
+    }
+  }
+
+  .menu {
+    width: 32px;
+    height: 26px;
+    background: url(../images/menu.png) center center no-repeat;
+    display: inline-block;
+    float: right;
+    margin-right: 25px;
+
+    &__item {
+      display: none;
+
+      &__picked {
+        display: none;
+      }
+
+      &__search {
+        display: none;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,185 @@
+@import '../../../variables';
+
+@mixin position($posindent) {
+  background: url(../images/social.png) $posindent 0 no-repeat;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-left: 23px;
+}
+
+.footer {
+  font-family: $font_lato;
+  background-color: $primary-color;
+  height: 380px;
+  margin-top: 100px;
+
+  &__text {
+    color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-top: 70px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  &__about-rights {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.4);
+
+    &__marked {
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+
+.social {
+  margin: 23px auto;
+  position: relative;
+  width: 200px;
+  height: 22px;
+
+  &__facebook {
+    @include position(0px);
+  }
+
+  &__twitter {
+    @include position(-22px);
+  }
+
+  &__instargam {
+    @include position(-44px);
+  }
+
+  &__pinterest {
+    @include position(-66px);
+  }
+}
+
+.footer-menu {
+  margin: 86px auto 0 40%;
+
+  &__item {
+    margin-left: $menu-indent;
+    font-size: 16px;
+    color: rgb(189, 189, 189);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &__picked {
+      color: rgb(51, 51, 51);
+      margin-left: $menu-indent;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__search {
+      background: url(../images/search.png) center center no-repeat;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-left: 30px;
+
+    }
+  }
+}
+
+@media (max-width: 320px) {
+
+  @mixin position($posindent) {
+    background: url(../images/social.png) $posindent 0 no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .footer {
+    font-family: $font_lato;
+    background-color: $primary-color;
+    height: 380px;
+    margin-top: 100px;
+    font-size: 36px;
+
+    &__text {
+      color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding-top: 70px;
+      font-size: 36px;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    &__about-rights {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 50px;
+      color: rgba(255, 255, 255, 0.4);
+
+      &__marked {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .social {
+    margin: 20px auto;
+    position: relative;
+    height: 22px;
+    width: 200px;
+
+    &__facebook {
+      @include position(0px);
+    }
+
+    &__twitter {
+      @include position(-22px);
+    }
+
+    &__instargam {
+      @include position(-44px);
+    }
+
+    &__pinterest {
+      @include position(-66px);
+    }
+  }
+
+  .footer-menu {
+    margin: 0 55px;
+
+    &__item {
+      font-size: 16px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+      margin-top: 25px;
+
+      &__picked {
+        color: rgb(51, 51, 51);
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+
+      }
+
+      &__search {
+        display: none;
+      }
+    }
+  }
+}
+
+
