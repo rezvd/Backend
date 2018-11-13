@@ -1,0 +1,6 @@
+111
+2 This is second line
+
+3 Third line in this boring text
+4 Unexpectedly, it's a fourth string
+5 Finally, last (fifth) line

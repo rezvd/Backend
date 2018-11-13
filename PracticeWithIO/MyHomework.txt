@@ -1,0 +1,11 @@
+.
+..
+formatter
+.gitignore
+homework
+Homework3.txt
+Practice1
+workshop
+А ларчик просто открывался
+
+Rezvanova
