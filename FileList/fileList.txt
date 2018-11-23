@@ -1,0 +1,14 @@
+t1.txt, File, rw-, /home/rezvd/Документы/Backend/FileList/./test/t1.txt
+
+1, Directory, rwx, /home/rezvd/Документы/Backend/FileList/./test/1
+
+2, Directory, rwx, /home/rezvd/Документы/Backend/FileList/./test/1/2
+
+3, Directory, rwx, /home/rezvd/Документы/Backend/FileList/./test/1/2/3
+
+3.1.txt, File, rw-, /home/rezvd/Документы/Backend/FileList/./test/1/2/3/3.1.txt
+
+2.1.txt, File, rw-, /home/rezvd/Документы/Backend/FileList/./test/1/2/2.1.txt
+
+t2.txt, File, rw-, /home/rezvd/Документы/Backend/FileList/./test/t2.txt
+
